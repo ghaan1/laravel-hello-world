@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    echo "Hi! Selamat Datang di Website Laravel" ;
+});
+
+Route::get('/about', function () {
+    echo "2041720178 <br> Muhammad Ghaniyu Haq Haryanto <br> TI - 2G";
+});
+
+Route::get('/articles/{id}', function ($id) {
+    echo "Ini adalah halaman Artikel dengan ID : $id";
 });
