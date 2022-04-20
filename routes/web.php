@@ -22,7 +22,7 @@ Route::get('/',[PostController::class, 'index']);
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('/article/cetak_pdf', [ArticleController::class, 'cetak_pdf'])->name('cetak_pdf');
 
 // Route::get('/about', function () {
 //     echo "2041720178 <br> Muhammad Ghaniyu Haq Haryanto <br> TI - 2G";
